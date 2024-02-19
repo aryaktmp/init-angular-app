@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: ` <router-outlet></router-outlet>`,
 })
 export class AppComponent {
-  title = 'try-angular';
+  constructor(private primengConfig: PrimeNGConfig) {}
+
+  public ngOnInit(): void {
+    this.primengConfig.ripple = true;
+  }
 }

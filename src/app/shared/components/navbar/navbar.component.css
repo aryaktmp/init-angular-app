@@ -1,0 +1,9 @@
+:host ::ng-deep {
+  .p-tabmenu {
+    background-color: #000 !important;
+  }
+
+  .p-tabmenu .p-tabmenu-nav {
+    background-color: #000 !important;
+  }
+}
